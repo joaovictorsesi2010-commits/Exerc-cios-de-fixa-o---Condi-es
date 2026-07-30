@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios de JavaScript 2</title>
+
+    <script>
+
+        var valor = Number(prompt("Qual o valor do produto? "))
+        var pagamento = prompt("Como pretende pagar? (Pix / Dinheiro / Cartão)")
+
+        if (pagamento == "Pix") {
+            desconto = valor * 0.14
+            valor2 = valor - desconto
+            alert("Seu produto, com o desconto do Pix, será de " + valor2)
+        } else if (pagamento == "Dinheiro") {
+            desconto = valor * 0.07
+            valor2 = valor - desconto
+            alert("Seu produto, com o desconto do Dinheiro, será de " + valor2)
+        } else if (pagamento == "Cartão") {
+            alert("Seu produto, por ter sido pago com Cartão, não terá desconto, e será de " + valor)
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
