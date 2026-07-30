@@ -7,17 +7,17 @@
     <script>
 
         var valor = Number(prompt("Qual o valor do produto? "))
-        var pagamento = prompt("Como pretende pagar? (Pix / Dinheiro / Cartão)")
+        var pagamento = prompt("Como pretende pagar? (1 - Pix / 2 - Dinheiro / 3- Cartão)")
 
-        if (pagamento == "Pix") {
+        if (pagamento == 1) {
             desconto = valor * 0.14
             valor2 = valor - desconto
             alert("Seu produto, com o desconto do Pix, será de " + valor2)
-        } else if (pagamento == "Dinheiro") {
+        } else if (pagamento == 2) {
             desconto = valor * 0.07
             valor2 = valor - desconto
             alert("Seu produto, com o desconto do Dinheiro, será de " + valor2)
-        } else if (pagamento == "Cartão") {
+        } else if (pagamento == 3) {
             alert("Seu produto, por ter sido pago com Cartão, não terá desconto, e será de " + valor)
         }
     </script>
